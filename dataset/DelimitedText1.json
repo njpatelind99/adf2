@@ -1,0 +1,84 @@
+{
+	"name": "DelimitedText1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "Group1.txt",
+				"container": "cn1"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "OrderID",
+				"type": "String"
+			},
+			{
+				"name": "CustomerID",
+				"type": "String"
+			},
+			{
+				"name": "EmployeeID",
+				"type": "String"
+			},
+			{
+				"name": "OrderDate",
+				"type": "String"
+			},
+			{
+				"name": "RequiredDate",
+				"type": "String"
+			},
+			{
+				"name": "ShippedDate",
+				"type": "String"
+			},
+			{
+				"name": "ShipVia",
+				"type": "String"
+			},
+			{
+				"name": "Freight",
+				"type": "String"
+			},
+			{
+				"name": "ShipName",
+				"type": "String"
+			},
+			{
+				"name": "ShipAddress",
+				"type": "String"
+			},
+			{
+				"name": "ShipCity",
+				"type": "String"
+			},
+			{
+				"name": "ShipRegion",
+				"type": "String"
+			},
+			{
+				"name": "ShipPostalCode",
+				"type": "String"
+			},
+			{
+				"name": "ShipCountry",
+				"type": "String"
+			},
+			{
+				"name": "Dummy",
+				"type": "String"
+			}
+		]
+	}
+}
